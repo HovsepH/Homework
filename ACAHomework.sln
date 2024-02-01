@@ -5,13 +5,15 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BANKINGsystem", "BANKINGsystem\BANKINGsystem.csproj", "{E36C448E-D16C-4A75-B601-15E61EB152F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework3", "Homework3\Homework3.csproj", "{C13F0300-6489-4A01-ABCB-FEB51D20FC27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework3", "Homework3\Homework3.csproj", "{C13F0300-6489-4A01-ABCB-FEB51D20FC27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework4", "Homework4\Homework4.csproj", "{8D962F59-72F7-4FB0-8A90-69E09868D1DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework4", "Homework4\Homework4.csproj", "{8D962F59-72F7-4FB0-8A90-69E09868D1DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework4_2", "Homework4.2\Homework4_2.csproj", "{B016F172-F30C-4BA1-91D2-960E427B3401}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework4_2", "Homework4.2\Homework4_2.csproj", "{B016F172-F30C-4BA1-91D2-960E427B3401}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework4_3", "Homework4_3\Homework4_3.csproj", "{3695D00B-FE7A-429A-87E7-002994AB2FC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework4_3", "Homework4_3\Homework4_3.csproj", "{3695D00B-FE7A-429A-87E7-002994AB2FC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework5", "Homework5\Homework5.csproj", "{97C0115A-8108-4E67-9D8A-4D02319A86CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3695D00B-FE7A-429A-87E7-002994AB2FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3695D00B-FE7A-429A-87E7-002994AB2FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3695D00B-FE7A-429A-87E7-002994AB2FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C0115A-8108-4E67-9D8A-4D02319A86CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C0115A-8108-4E67-9D8A-4D02319A86CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C0115A-8108-4E67-9D8A-4D02319A86CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C0115A-8108-4E67-9D8A-4D02319A86CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
