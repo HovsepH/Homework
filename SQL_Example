@@ -1,0 +1,60 @@
+CREATE TABLE Authors (
+    AuthorId INT PRIMARY KEY not null,
+    Name VARCHAR(100) NOT NULL,
+   
+);
+
+CREATE TABLE Genres (
+    GenreId INT PRIMARY KEY not null,
+    Name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Publishers (
+    PublisherId INT PRIMARY KEY not null,
+    Name VARCHAR(100) NOT NULL,
+);
+
+CREATE TABLE Books (
+    BookId INT PRIMARY KEY not null,
+    Title VARCHAR(50) NOT NULL,
+    PublisherId INT not null,
+    FOREIGN KEY (PublisherId) REFERENCES Publishers(PublisherId)
+);
+
+CREATE TABLE BookAuthors (
+    BookId INT not null,
+    AuthorId INT not null,
+    FOREIGN KEY (BookId) REFERENCES Books(BookId),
+    FOREIGN KEY (AuthorId) REFERENCES Authors(AuthorId)
+);
+
+CREATE TABLE BookGenres (
+    BookId INT not null,
+    GenreId INT not null,
+    FOREIGN KEY (BookId) REFERENCES Books(BookId),
+    FOREIGN KEY (GenreId) REFERENCES Genres(GenreId)
+);
+
+
+CREATE TABLE OrderItems (
+    OrderItemId INT PRIMARY KEY ,
+    BookId INT not null,
+    Quantity INT not null,
+    Price DECIMAL(10, 2) check (Price>0),
+    FOREIGN KEY (BookId) REFERENCES Books(BookId)
+);
+
+
+CREATE TABLE Orders (
+    OrderId INT PRIMARY KEY ,
+    OrderItemId int not null,
+    FOREIGN KEY (OrderItemId) REFERENCES OrderItems(OrderItemId)
+);
+
+CREATE TABLE Customers (
+    CustomerId INT PRIMARY KEY ,
+    Email VARCHAR(50) NOT NULL UNIQUE,
+	OrderId int,
+	FOREIGN KEY (OrderId) REFERENCES Orders(OrderId),
+	
+);
